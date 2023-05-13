@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  padding: 28px 28px 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #0E0E0C;
+}
+
+nav, ul {
+  padding-top: 19px;
+  display: flex;
+  list-style-type: none;
+}
+
+nav, ul, li {
+  padding-left: 54px;
+}
+
+nav a {
+  font-family: jost;
+  font-size: 30px;
+  color: white;
+}
+
+.hero {
+  background-image:url(imagesss/celso-405219.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.hero , h1 {
+  padding-left:13px;
+  color: white;
+  font-family: jost;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 45px;
+}
+
+.btn-hero {
+  padding-bottom: 80px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  background-color: #0E0E0C;
+  column-gap: 42px;
+  row-gap: 30px;
+  padding-right: 28px;
+  padding-left:28px;
+}
+
+.btn-hero button {
+  cursor: pointer;
+  font-family: jost;
+  font-size: 30px;
+  font-weight: 600;
+  width: 315px;
+  height: 71px;
+  border-radius: 50px;
+  border-style: none;
+  background-color: #5A5A5A;
+}
+
+.btn-hero button a {
+  color: white;
+}
+
+.sec-con .g-main {
+  padding-bottom: 128px;
+  background-color: #5A5A5A;
+  justify-content: center;
+}
+
+.sec-con .h-main {
+  background-color:#5A5A5A;
+}
+
+
+
+.sec-con .h-main {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-family: jost;
+  font-size: 40px;
+  padding-top: 83px;
+  padding-bottom: 106px;
+  padding-left: 28px;
+
+}
+
+.g-main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  row-gap:24px;
+  column-gap: 24px;
+  padding-right: 28px ;
+  padding-left: 28px;
+
+}
+
+.m-sec a {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.m-sec {
+  background-color: #0E0E0C;
+  color: white;
+  font-family: jost;
+}
+
+
+.m-sec h2 {
+  padding: 28px 164px 0.4px 40px;
+}
+
+.m-sec p {
+  padding: 0 40px 32px 40px; 
+}
+
+.ex-h {
+  display: flex;
+  justify-content: flex-start;
+  font-family: jost;
+  font-size: 40px;
+  padding-top: 83px;
+  padding-bottom: 106px;
+  padding-left: 28px;
+  color: white;
+  background-color: #0E0E0C;
+}
+
+.ex-m {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 295px));
+  row-gap:24px;
+  column-gap: 73px;
+  background-color: #0E0E0C;
+  padding-bottom: 128px;
+}
+
+.ex-p img {
+  height: 447px;
+  width: 295px;
+}
+
+.see-m {
+  display: flex;
+  justify-content: flex-start;
+  font-family: jost;
+  font-size: 40px;
+  padding-top: 83px;
+  padding-bottom: 106px;
+  padding-left: 28px;
+  color: white;
+  background-color:#5A5A5A;
+}
+
+.f-m {
+  font-family: jost;
+  font-size: 18px;
+  color: white;
+  background-color: #0E0E0C;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  justify-content: center;
+  row-gap:24px;
+  column-gap: 73px;
+  padding-top: 53px;
+  padding-bottom: 73px;
+  padding-left: 28px;
+  padding-right: 28px;
+  align-content: space-between;
+}
+
+#hammenu-btn {
+  padding-bottom: 5px;
+  width: 60px;
+  height: 40px;
+  display: none;
+}
+
+#hammenu-btn-c {
+  height: 40px;
+  display: none;
+}
+
+@media (max-width: 769px) {
+
+  nav img {
+      width:140px;
+    }
+  #hammenu-btn {
+      display: initial;
+    }
+    
+  #hammenu-btn-c {
+      padding-top: 10px;
+      width: 30px;
+      display: initial;
+    }
+
+    nav ul {
+      position: absolute;
+      top: 0;
+      right: -300px;
+      width: 300px;background-color: #5A5A5A;
+      height: 320px;
+      padding-top: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      list-style-type: none;
+      transition: 0.3s ease;
+    }
+    
+    nav ul.active {
+      right: 0;
+    }
+
+    nav ul li {
+     padding-top: 30px;
+    }
+
+}
+
+
+
